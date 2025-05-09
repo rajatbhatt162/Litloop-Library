@@ -19,7 +19,7 @@ const links = [
 
 const NavLinks = () => {
   return (
-    <nav className="flex flex-row md:flex-col bg-white shadow-md rounded-lg p-4 w-full md:w-56 max-w-full gap-4">
+    <nav className="flex flex-row md:flex-col bg-white shadow-md rounded-lg p-4 w-full max-w-full gap-4 overflow-y-auto max-h-96"> {/* Added overflow-y-auto and max-h-96 */}
       {links.map((link) => {
         const Icon = link.icon;
         return (
