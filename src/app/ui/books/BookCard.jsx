@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AddToCart from "./Addtocart";
 
 const BookCard = ({ book }) => {
   return (
@@ -28,6 +29,7 @@ const BookCard = ({ book }) => {
             {book.stock > 0 ? `${book.stock} in stock` : "Out of stock"}
           </p>
         </div>
+        <AddToCart book={book} />
       </div>
     </Link>
   );
