@@ -66,7 +66,7 @@ export default function Home() {
             <div className="bg-white p-3 rounded-full mr-3">
               <SparklesIcon className="w-10 h-10 text-purple-600" />
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">LitLoop</h1>
+            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">DoonStore</h1>
           </div>
           
           <p className="mt-6 text-xl sm:text-2xl max-w-3xl mx-auto text-purple-100">
@@ -123,7 +123,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Why Choose LitLoop?</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Why Choose DoonStore?</h2>
             <p className="mt-4 text-xl text-gray-600">Benefits that make us the preferred choice for book lovers</p>
           </div>
           
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Reading?</h2>
           <p className="text-xl text-purple-100 mb-8">
-            Join LitLoop today and discover your next favorite book from our extensive collection.
+            Join DoonStore today and discover your next favorite book from our extensive collection.
           </p>
           <Link
             href="/store"
@@ -163,7 +163,7 @@ export default function Home() {
           <div>
             <div className="flex items-center mb-4">
               <SparklesIcon className="w-6 h-6 mr-2 text-purple-400" />
-              <span className="text-xl font-bold">LitLoop</span>
+              <span className="text-xl font-bold">DoonStore</span>
             </div>
             <p className="text-gray-400">Your one-stop bookstore for buying, selling, and renting books.</p>
           </div>
@@ -190,13 +190,13 @@ export default function Home() {
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-gray-400 mb-2">Email: contact@litloop.com</p>
+            <p className="text-gray-400 mb-2">Email: contact@DoonStore.com</p>
             <p className="text-gray-400 mb-2">Phone: +91 1234567890</p>
           </div>
         </div>
         
         <div className="max-w-7xl mx-auto border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} LitLoop. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DoonStore. All rights reserved.</p>
         </div>
       </footer>
     </div>

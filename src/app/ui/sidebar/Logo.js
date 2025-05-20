@@ -7,7 +7,7 @@ const Logo = () => {
         <SparklesIcon className="w-8 h-8 text-purple-600" />
       </div>
       <div>
-        <p className="text-2xl font-bold tracking-tight">LitLoop</p>
+        <p className="text-2xl font-bold tracking-tight">DoonStore</p>
         <p className="text-xs opacity-80 -mt-1">Online Bookstore</p>
       </div>
     </div>

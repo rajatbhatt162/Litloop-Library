@@ -3,7 +3,7 @@ import MobileNavbar from "../ui/sidebar/MobileNavbar"
 import StoreProvider from "../provider"
 
 export const metadata = {
-  title: 'LitLoop - Buy or Rent Books',
+  title: 'DoonStore - Buy or Rent Books',
   description: 'An Online Bookstore to Sell and Rent Used Books',
 }
 
