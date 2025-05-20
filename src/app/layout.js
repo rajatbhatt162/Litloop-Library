@@ -1,30 +1,26 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ToastContainer } from "react-toastify";
+import { Inter } from 'next/font/google'
+import './globals.css'
+import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { dbConnect } from '@/services/mongo';
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "LitLoop Online Bookstore",
-  description: "Sell, Purchase & Rent",
-};
+  title: 'LiLoop',
+  description: 'An Online book store',
+}
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const conn = await dbConnect();
+  console.log(conn);
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={inter.className}>
         {children}
         <ToastContainer />
       </body>
     </html>
-  );
+  )
 }
