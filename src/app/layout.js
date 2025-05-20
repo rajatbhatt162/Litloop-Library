@@ -13,8 +13,15 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const conn = await dbConnect();
-  console.log(conn);
+  // Try to connect to MongoDB but don't let connection failures crash the app
+  try {
+    const conn = await dbConnect();
+    console.log("Database connection status:", conn.isConnected !== false ? "Connected" : "Not connected");
+  } catch (error) {
+    console.error("Error in root layout:", error);
+    // Continue rendering the app even if DB connection fails
+  }
+  
   return (
     <html lang="en">
       <body className={inter.className}>

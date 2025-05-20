@@ -2,7 +2,7 @@ import {
   CheckCircleIcon, 
   TruckIcon, 
   HomeIcon, 
-  PackageIcon
+  ArchiveBoxIcon
 } from "@heroicons/react/24/solid";
 
 const orderStatus = {
@@ -65,7 +65,7 @@ const TrackOrder = () => {
                     {step.status === 'complete' ? (
                       <CheckCircleIcon className="h-6 w-6" />
                     ) : step.id === 2 ? (
-                      <PackageIcon className="h-6 w-6" />
+                      <ArchiveBoxIcon className="h-6 w-6" />
                     ) : step.id === 3 ? (
                       <TruckIcon className="h-6 w-6" />
                     ) : (
